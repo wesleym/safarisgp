@@ -24,11 +24,11 @@
 				<key>Filename</key>
 				<string>safarisgp.html</string>
 				<key>Height</key>
-				<real>350</real>
+				<real>480</real>
 				<key>Identifier</key>
 				<string>generatorPopover</string>
 				<key>Width</key>
-				<real>250</real>
+				<real>320</real>
 			</dict>
 		</array>
 		<key>Toolbar Items</key>
