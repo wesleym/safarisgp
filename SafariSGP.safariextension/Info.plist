@@ -68,6 +68,8 @@
 			<string>All</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://raw.github.com/wesleym/safarisgp/master/update.plist</string>
 	<key>Website</key>
 	<string>http://github.com/wesleym/safarisgp/</string>
 </dict>
