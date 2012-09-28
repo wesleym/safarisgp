@@ -1,8 +1,8 @@
 (function () {
   function popoverListener() {
     var url = safari.application.activeBrowserWindow.activeTab.url;
-    var uriResult = URI.parse(url);
-    document.getElementById("Domain").value = uriResult.getDomain();
+    // Disable subdomain removal so the entire host is available in the form
+    document.getElementById("Domain").value = gp2_process_uri(url, true);
   }
 
   safari.application.addEventListener("popover", popoverListener, true);
