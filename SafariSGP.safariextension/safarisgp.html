@@ -437,8 +437,11 @@
 					if(Passwd) {
 
 						document.getElementById('Result').removeChild(document.getElementById('Result').firstChild);
-						document.getElementById('Result').appendChild(document.createTextNode(gp2_generate_passwd(Passwd+':'+Domain,Len)));
+						var passwd = gp2_generate_passwd(Passwd+':'+Domain,Len);
+						document.getElementById('Result').appendChild(document.createTextNode(passwd));
 						document.getElementById('Result').style.display='block';
+						console.log("Calling dispatchMessage('completePassword', " + passwd + ");");
+						safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("completePassword", passwd);
 
 						if(allowsLocalStorage) {
 							localStorage.MobileDomain = Domain;
